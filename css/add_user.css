@@ -1,0 +1,98 @@
+/* การจัดการทั่วไป */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D4C8BE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #B8926A;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* การจัดการข้อความแสดงผล */
+p {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* การจัดการฟอร์ม */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #B8926A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-color: #D4C8BE;
+}
+
+select {
+    background-color: white;
+}
+
+input[type="submit"] {
+    background-color: #B8926A;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #A07C5A;
+}
+
+/* การจัดการปุ่มกลับ */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B8926A;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A07C5A;
+}
+
+/* การปรับหน้าตาให้เหมาะกับอุปกรณ์เคลื่อนที่ */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}

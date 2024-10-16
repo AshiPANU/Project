@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4C8BE;
+    /* สีพื้นหลังเรียบง่าย */
+    font-family: 'Arial', sans-serif;
+}
+
+.formall {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+form h3 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #B8926A;
+}
+
+form p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: red;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #B8926A;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #B8926A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #A07C5A;
+}
+
+@media screen and (max-width: 600px) {
+    .formall {
+        padding: 15px;
+    }
+
+    form h3 {
+        font-size: 1.2rem;
+    }
+}
+
+form img {
+    width: 150px;
+}

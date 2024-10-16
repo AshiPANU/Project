@@ -1,0 +1,137 @@
+/* การจัดการทั่วไป */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D4C8BE;
+    /* สีพื้นหลัง */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* จัดให้กลางแนวนอน */
+    align-items: center;
+    /* จัดให้กลางแนวตั้ง */
+    height: 100vh;
+    /* ความสูงของหน้าจอ */
+}
+
+.container {
+    background-color: #fff;
+    /* สีพื้นหลังของ container */
+    border-radius: 10px;
+    /* มุมโค้งมน */
+    padding: 30px;
+    /* ช่องว่างภายใน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เงา */
+    max-width: 400px;
+    /* ความกว้างสูงสุด */
+    width: 100%;
+    /* ความกว้างเต็มที่ */
+    text-align: center;
+    /* จัดข้อความให้อยู่กลาง */
+}
+
+h2 {
+    color: #B8926A;
+    /* สีหัวเรื่อง */
+    margin-bottom: 20px;
+    /* ช่องว่างด้านล่าง */
+    font-size: 1.8em;
+    /* ขนาดฟอนต์ */
+}
+
+/* การจัดการข้อความแสดงผล */
+p {
+    color: red;
+    /* สีข้อความแสดงผล */
+    margin-bottom: 15px;
+    /* ช่องว่างด้านล่าง */
+    font-size: 1.1em;
+    /* ขนาดฟอนต์ */
+}
+
+/* การจัดการฟอร์ม */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    /* ความกว้างเต็มที่ */
+    padding: 10px;
+    /* ช่องว่างภายใน */
+    margin: 10px 0;
+    /* ช่องว่างด้านบนและล่าง */
+    border: 1px solid #B8926A;
+    /* เส้นขอบ */
+    border-radius: 5px;
+    /* มุมโค้งมน */
+    box-sizing: border-box;
+    /* รวมความกว้างและ padding */
+    font-size: 1em;
+    /* ขนาดฟอนต์ */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+    outline: none;
+    /* ไม่มีเส้นขอบเมื่อ focus */
+    border-color: #D4C8BE;
+    /* เปลี่ยนสีเส้นขอบเมื่อ focus */
+}
+
+textarea {
+    resize: vertical;
+    /* ปรับขนาดเฉพาะแนวดิ่ง */
+}
+
+input[type="submit"] {
+    background-color: #B8926A;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีตัวอักษร */
+    border: none;
+    /* ไม่มีเส้นขอบ */
+    padding: 12px;
+    /* ช่องว่างภายใน */
+    border-radius: 5px;
+    /* มุมโค้งมน */
+    cursor: pointer;
+    /* เปลี่ยนเป็นมือเมื่อ hover */
+    font-size: 1.1em;
+    /* ขนาดฟอนต์ */
+    width: 100%;
+    /* ความกว้างเต็มที่ */
+    transition: background-color 0.3s ease;
+    /* เอฟเฟกต์เมื่อ hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #A07C5A;
+    /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B8926A;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A07C5A;
+}
+
+/* การปรับหน้าตาให้เหมาะสมกับอุปกรณ์เคลื่อนที่ */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        /* ลดขนาด padding */
+    }
+}

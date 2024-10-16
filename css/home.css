@@ -1,0 +1,100 @@
+
+/* การจัดการ layout หลัก */
+.content1,
+.content2 {
+    display: flex;
+    /* ใช้ flexbox สำหรับการจัดวาง */
+    flex-wrap: wrap;
+    /* ให้มีการห่อแถวเมื่อเต็ม */
+    justify-content: space-around;
+    /* จัดวางให้เว้นระยะห่าง */
+    margin: 20px;
+    /* ช่องว่างรอบ ๆ */
+}
+
+/* การจัดการ subcontent */
+.subcontent {
+    flex: 1 1 200px;
+    /* กำหนดให้มีขนาดที่เหมาะสม */
+    margin: 10px;
+    /* ช่องว่างระหว่างกล่อง */
+}
+
+/* ขนาดกล่องเล็ก */
+.small-box {
+    background-color: #D4C8BE;
+    /* เปลี่ยนสีพื้นหลังเป็นโทนสีใหม่ */
+    border-radius: 8px;
+    /* มุมโค้งมน */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* เงาเบา ๆ */
+    padding: 20px;
+    /* ช่องว่างภายในกล่อง */
+    text-align: center;
+    /* จัดข้อความให้อยู่กลาง */
+    transition: transform 0.2s;
+    /* เพิ่มเอฟเฟกต์ขยายเมื่อ hover */
+}
+
+.small-box:hover {
+    transform: translateY(-5px);
+    /* ขยายขึ้นเมื่อ hover */
+}
+
+/* การจัดการข้อความภายในกล่อง */
+.inner {
+    padding: 10px;
+    /* เพิ่มพื้นที่ภายใน */
+}
+
+/* การจัดการ h1 และ h3 */
+h1,
+h3 {
+    color: white;
+    /* เปลี่ยนสีตัวอักษรเป็นโทนสีใหม่ */
+    margin-bottom: 10px;
+    /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/* การจัดการลิงก์ที่อยู่ในกล่อง */
+.small-box-footer {
+    display: block;
+    /* แสดงเป็นบล็อก */
+    padding: 10px;
+    /* เพิ่มพื้นที่ภายใน */
+    background-color: #B8926A;
+    /* เปลี่ยนสีพื้นหลังของลิงก์เป็นโทนสีใหม่ */
+    color: white;
+    /* สีตัวอักษร */
+    text-decoration: none;
+    /* ลบเส้นใต้ */
+    border-radius: 4px;
+    /* มุมโค้งมน */
+    margin-top: 10px;
+    /* เพิ่มระยะห่างด้านบน */
+    transition: background-color 0.3s;
+    /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+.small-box-footer:hover {
+    background-color: #A3785B;
+    /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* การจัดการข้อความที่มีสี */
+.text-danger {
+    color: #e74c3c;
+    /* สีแดงสำหรับข้อความที่มีความสำคัญ */
+}
+
+/* การปรับหน้าตาให้เหมาะสมกับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+
+    .content1,
+    .content2 {
+        flex-direction: column;
+        /* เปลี่ยนเป็นแนวตั้ง */
+        align-items: center;
+        /* จัดให้อยู่กลาง */
+    }
+}
