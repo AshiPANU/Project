@@ -1,0 +1,202 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* สีพื้นหลังหลัก */
+}
+
+.container {
+    max-width: 900px;
+    /* กำหนดความกว้างสูงสุด */
+    margin: 50px auto;
+    /* จัดให้อยู่กึ่งกลางแนวนอน */
+    padding: 20px;
+    /* เพิ่มพื้นที่รอบๆ เนื้อหา */
+    background-color: #D4C8BE;
+    /* สีพื้นหลัง */
+    border-radius: 8px;
+    /* มุมโค้งมน */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงาให้กับ container */
+}
+
+.container h2 {
+    text-align: center;
+    /* จัดให้ข้อความอยู่ตรงกลาง */
+    color: white;
+    /* สีตัวอักษร */
+    margin-bottom: 20px;
+    /* เพิ่มช่องว่างด้านล่าง */
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    /* สีพื้นหลังของฟอร์ม */
+}
+
+form input[type="submit"] {
+    background-color: #B8926A;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีของตัวอักษรในปุ่ม */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* เอฟเฟกต์เปลี่ยนสี */
+}
+
+form input[type="submit"]:hover {
+    background-color: #A07C5A;
+    /* สีเมื่อ hover */
+}
+
+/* จัดการข้อความ Success และ Error */
+p {
+    text-align: center;
+    /* จัดข้อความให้อยู่กลาง */
+    font-size: 1.1em;
+    /* กำหนดขนาดตัวอักษร */
+    margin-bottom: 15px;
+    /* ช่องว่างด้านล่าง */
+}
+
+p.green {
+    color: green;
+    /* สีเขียวสำหรับข้อความ success */
+}
+
+p.red {
+    color: red;
+    /* สีแดงสำหรับข้อความ error */
+}
+
+/* การจัดการตาราง */
+table {
+    width: 100%;
+    /* กำหนดให้ตารางกว้างเต็มที่ */
+    border-collapse: collapse;
+    /* ยกเลิกการมีช่องว่างระหว่างเส้นกรอบ */
+    margin: 20px 0;
+    /* เพิ่มระยะห่าง */
+    font-size: 1em;
+    /* ขนาดฟอนต์ */
+    text-align: left;
+    /* จัดข้อความให้อยู่ซ้าย */
+}
+
+table thead th {
+    background-color: #B8926A;
+    /* สีพื้นหลังของคอลัมน์หัวข้อ */
+    color: white;
+    /* สีตัวอักษร */
+    padding: 12px;
+    /* ช่องว่างภายในเซลล์ */
+    border-bottom: 1px solid #ddd;
+    /* เส้นแบ่งด้านล่าง */
+}
+
+table tbody td {
+    padding: 12px;
+    /* ช่องว่างภายในเซลล์ */
+    border-bottom: 1px solid #ddd;
+    /* เส้นแบ่งด้านล่าง */
+    color: #555;
+    /* สีตัวอักษร */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* สีพื้นหลังของแถวคู่ */
+}
+
+/* การจัดการลิงก์ */
+a {
+    text-decoration: none;
+    /* ลบเส้นใต้ */
+    color: #B8926A;
+    /* สีของลิงก์ */
+    padding: 8px 12px;
+    /* เพิ่มพื้นที่รอบข้อความ */
+    border-radius: 4px;
+    /* มุมโค้งมน */
+    transition: background-color 0.2s;
+    /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+a:hover {
+    background-color: #B8926A;
+    /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: white;
+    /* เปลี่ยนสีข้อความเป็นขาว */
+}
+
+/* การจัดการปุ่ม */
+.btn {
+    display: inline-block;
+    /* แสดงเป็นบล็อกแบบอินไลน์ */
+    padding: 10px 20px;
+    /* เพิ่มช่องว่างภายในปุ่ม */
+    margin: 10px 5px;
+    /* ช่องว่างระหว่างปุ่ม */
+    background-color: #B8926A;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีของตัวอักษร */
+    text-align: center;
+    /* จัดข้อความให้อยู่ตรงกลาง */
+    border-radius: 5px;
+    /* มุมโค้งมน */
+    transition: background-color 0.3s ease;
+    /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+.btn:hover {
+    background-color: #D4C8BE;
+    /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+
+/* การปรับหน้าตาให้เหมาะสมกับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        /* ลดขนาด padding */
+    }
+
+    table {
+        font-size: 0.9em;
+        /* ลดขนาดตัวอักษร */
+    }
+
+    a {
+        padding: 6px 10px;
+        /* ลดขนาด padding ของลิงก์ */
+    }
+
+    .btn {
+        padding: 8px 15px;
+        /* ลดขนาด padding ของปุ่ม */
+    }
+}

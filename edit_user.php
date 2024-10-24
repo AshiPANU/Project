@@ -1,20 +1,17 @@
 <?php
 session_start();
-include "config.php"; // เชื่อมต่อฐานข้อมูล
+include "config.php";
 
-// ตรวจสอบสิทธิ์การเข้าถึง
 if (!isset($_SESSION['admin_logged_in'])) {
     header("Location: login.php");
     exit();
 }
 
-// ตรวจสอบว่าได้รับ ID มาหรือไม่
 if (!isset($_GET['id'])) {
     header("Location: manage_users.php");
     exit();
 }
 
-// ดึงข้อมูลผู้ใช้ตาม ID
 $id = $_GET['id'];
 $query = "SELECT * FROM user WHERE id = ?";
 $stmt = $conn->prepare($query);
@@ -29,7 +26,6 @@ if (!$user) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // อัปเดตข้อมูลผู้ใช้
     $name = $_POST['name'];
     $lastname = $_POST['lastname'];
     $username = $_POST['username'];
